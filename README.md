@@ -14,48 +14,17 @@ example of input data:
 ```
 
 example of output html ready to be printed in firefox or chrome:
-```
-<html>
-<head>
-<style>
-@page {
-  margin: 10mm 10mm 10mm 10mm;
-}
-body {
-  columns: 2;
-  column-rule: 2px solid #f1f1f1;
-}
-p.day {
-  text-align: center;
-  color: black;
-  text-decoration: underline;
-  font-weight: bold;
-}
-p.ls {
-  text-align: left;
-  margin-right: 15%;
-  color: blue;
-}
-p.rs {
-  text-align: right;
-  margin-left: 15%;
-  color: red;
-}
+[lorem_ipsum.html](lorem_ipsum.html)
 
-</style>
-</head>
-<body>
-<p class=day> 15/05/2021</p>
-<p class=rs>00:29 Alice : Hello 🙂</p>
-<p class=ls>00:29 Bob : So nice you're here now !</p>
-```
-
+same example printed with firefox:
+[lorem_ipsum.pdf](lorem_ipsum.pdf)
 
 usage
 -----
 
+```
 ./whatsapp2html.sh [right speaker] < whatsapp_discussion_copy_and_paste_export.txt > whatsapp.html
-
+```
 
 whatsapp2table
 ==============
@@ -73,4 +42,7 @@ full disclosure: it's the right assumptions for me in France
 usage
 -----
 
+```
 ./whatsapp2table.sh < whatsapp_discussion_copy_and_paste_export.txt > whatsapp.csv
+```
+
