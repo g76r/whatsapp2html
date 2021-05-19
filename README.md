@@ -56,3 +56,21 @@ usage
 
 ./whatsapp2html.sh [right speaker] < whatsapp_discussion_copy_and_paste_export.txt > whatsapp.html
 
+
+whatsapp2table
+==============
+
+intention
+---------
+
+produces a statistical table suitable for input for e.g. pivot table
+
+beware that the script makes assumptions on the date format that are only
+applicable to some locales (assumes dd/mm/yyyy timestamps in whatsapp export
+and uses ; separator in csv export)
+full disclosure: it's the right assumptions for me in France
+
+usage
+-----
+
+./whatsapp2table.sh < whatsapp_discussion_copy_and_paste_export.txt > whatsapp.csv
