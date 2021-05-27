@@ -26,6 +26,12 @@ usage
 ./whatsapp2html.sh [right speaker] < whatsapp_discussion_copy_and_paste_export.txt > whatsapp.html
 ```
 
+example:
+
+```
+sed 's/Alice Smith/Alice 👩/g;s/Bob Connor/Bob 🧔/g' < whatsapp.txt | ./whatsapp2html.sh 'Alice 👩' > whatsapp.html
+```
+
 whatsapp2table
 ==============
 
